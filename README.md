@@ -1,6 +1,6 @@
 # Hi there, I'm Korbinian Hirsch👋
 
-Welcome to my digital workshop!
+Welcome to my Github-page!
 
 I'm a Data & AI enthusiast with a unique background: I hold a **B.Sc. in Civil Engineering** and am now bridging the physical and digital worlds as a first-semester student of **B.Sc. Artificial Intelligence & Data Science** at OTH Regensburg.
 
@@ -12,7 +12,7 @@ My goal is to leverage my analytical engineering mindset to build intelligent sy
 
 I'm currently building my foundational toolkit and diving deep into:
 
-*  **C:** Mastering the fundamentals for software development.
+*  **C:** Mastering the fundamentals in C for software development.
 * 🐍 **Python:** Mastering the fundamentals for data manipulation and analysis.
 * 📊 **Statistics & Linear Algebra:** The mathematical bedrock of all AI and Machine Learning.
 * 🤖 **Core AI Concepts:** Understanding data structures, algorithms, and the principles of machine learning.
@@ -22,7 +22,7 @@ I'm currently building my foundational toolkit and diving deep into:
 ### 🛠️ My Growing Tech Stack
 
 * **Languages:** C, Python, SQL
-* **Data Science:** (Soon: Pandas, NumPy, Matplotlib, Scikit-learn)
+* **Data Science:** (Soon: Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch)
 * **Tools:** Git, GitHub, VS Code, Jupyter Notebooks
 * **From my past life (Engineering):** Allplan-CAD, RFEM-Calculations, 
 
