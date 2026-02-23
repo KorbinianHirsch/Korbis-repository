@@ -1,35 +1,16 @@
---------------------------------------------------------------------------------------------------------------------
-				AGKI Projekt Hirsch Korbinian, Hildebrand Nicolas
+# C Neural Network: Hyperparameter Analysis
 
-Untersuchung des Einflusses von Hyperparametern eines in C implementierten Neuronalen Netzes auf die Klassifizierung
---------------------------------------------------------------------------------------------------------------------
+**AGKI Project by Korbinian Hirsch and Nicolas Hildebrand**
 
-- Dieser Ordner enthält alle Dateien, zum Trainieren und Testen eines Neuronalen Netzes.
+This repository contains a complete, from-scratch implementation of an Artificial Neural Network in C. The primary goal of this project is to investigate and analyze the influence of various hyperparameters on the network's classification performance.
 
-- Die Datei network_parameters.csv enthält die Gewichte des Netzes mit einer Genauigkeit von 98.14 %.
-diese wird beim Ausführen des Programms überschrieben (bitte speichern unter anderem Namen!)
+## ⚠️ Important Note on Pre-trained Weights
+The file `network_parameters.csv` currently contains the saved weights of a highly optimized model achieving **98.14% accuracy**. 
+**Warning:** Executing a new training run will overwrite this file. Please rename or back up this file if you wish to keep these specific weights!
 
-- Kompiliert werden die Dateien wie folgt: gcc main.c logic.c ui.c csv.c -o main
+## Compilation
 
-Für die Ausführung des Programms main müssen folgende Parameter übergeben werden:
+To compile the project, you need a standard C compiler (like `gcc`). Run the following command in your terminal:
 
-- die Anzahl an Trainingsdatenpunkte
-- die Dimension eines Trainingsdatenpunktes
-- den Dateinamen des Trainingsdatensatzes als .csv-Datei (z.B. mnist_train.csv)
-- die Anzahl an Testdatenpunkte
-- die Dimension eines Testdatenpunktes 
-- den Dateinamen des Testdatensatzes als .csv-Datei
-- die Anzahl an Neuronen im Hidden-Layer 1
-- die Anzahl an Neuronen im Hidden-Layer 2
-- die Anzahl an Trainingsepochen
-- die Learningrate (z.B. 0.1)
-- die Anzahl an Klassen
-
-Falls kein neues Netz erstellt werden soll, sondern ein vorhandenes Modell geladen werden soll, setze die Anzahl Epochen auf 0
-
-Die gesamten Parameter und Ergebnisse werden in der Datei experiment.csv gespeichert
-
-Die Architektur und Gewichte werden in der Datei network_parameters.csv gespeichert
-
-Der Trainings- und Testloss aller Epochen beim Training wird in der Datei loss.csv gespeichert
-
+```bash
+gcc main.c logic.c ui.c csv.c -o main
