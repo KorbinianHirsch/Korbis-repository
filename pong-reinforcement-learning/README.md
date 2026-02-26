@@ -23,20 +23,26 @@ This repository contains a Deep Q-Network (DQN) agent trained to play the classi
     ```bash
    git clone [https://github.com/yourusername/pong-rl-agent.git](https://github.com/yourusername/pong-rl-agent.git)
    cd pong-rl-agent
+   ```
 
 2. **Install Python dependencies**
     ```bash
     pip install torch pygame numpy matplotlib
+    ```
 
 3. **Compile the Physics Engine**
     Compile the engine.c file into a shared library so Python can access it.
-    Windows: 
+    Windows:
+
     ```bash
     gcc -shared -o engine.dll engine.c -O3
+    ```
 
     Linux / macOS:
+
     ```bash
     gcc -shared -fPIC -o engine.so engine.c -O3
+    ```
 
 4. **Usage**
 
@@ -45,6 +51,7 @@ This repository contains a Deep Q-Network (DQN) agent trained to play the classi
     To train the neural network from scratch without rendering (for maximum speed), run:
     ```bash
     python train.py
+    ```
 
     This script will execute the training loop, periodically save the best weights to pong_brain.pth, and display a plot showing the training progress (Score & Loss) upon completion.
 
@@ -52,5 +59,6 @@ This repository contains a Deep Q-Network (DQN) agent trained to play the classi
     To watch the trained agent play using the visual Pygame environment, run:
     ```bash
     python main.py
+    ```
 
     Note: Ensure that pong_brain.pth is present in the root directory before running this command.
